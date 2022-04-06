@@ -10,8 +10,8 @@
     },
     "content_scripts": [
         {
-          "matches": ["index.html"],
-          "js": ["script.js"]
+          "matches": ["https://exeprocess.github.io/easy-extension/"],
+          "js": ["contentScript.js","bootstrap.bundle.min.js","jquery.min.js"]
         }
     ],
     "permissions": ["activeTab"]
