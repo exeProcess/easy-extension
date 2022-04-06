@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Easy notes",
+    "description": "Easy notes Launcher",
+    "version": "1.0",
+    "icons": {"128": "images/icon1.png"},
+    "browser_action": {
+        "default_icon": "images/icon1.png",
+        "default_popup": "index.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["index.html"],
+          "js": ["script.js"]
+        }
+    ],
+    "permissions": ["activeTab"]
+}
