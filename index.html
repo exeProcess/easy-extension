@@ -31,14 +31,17 @@
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Text</label>
           <textarea style="resize: none;" class="form-control" id="notebody" aria-describedby="emailHelp"></textarea>
+          <div id="notebody-error" class="form-text d-none"></div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Title</label>
           <input type="text" class="form-control" id="title">
+          <div id="title-error" class="form-text d-none"></div>
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Author</label>
           <input type="text" class="form-control" id="author">
+          <div id="author-error" class="form-text d-none"></div>
         </div>
 
         <div class="mb-3">
@@ -52,10 +55,20 @@
 
     <!--start-->
     <div class="d-none" id="login-form">
+      <div class="alert alert-primary d-none" id="alert" role="alert">
+        Your Login credential does not our recors. try again or <a href="#" id="reg">Register</a>
+      </div>
+      <div class="alert alert-primary d-none" id="require" role="alert">
+        All feilds are required
+      </div>
+      <div class="alert alert-primary d-none" id="mailcorrect" role="alert">
+        Invalid email address
+      </div>
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email</label>
           <input type="text" class="form-control" id="email">
+          
         </div>
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">Password</label>
@@ -66,7 +79,13 @@
       </form>
     </div>
     <!--start-->
-    <div class="d-none" id="login-form">
+    <div class="d-none" id="reg-form">
+      <div class="alert alert-primary d-none" id="reg-req" role="alert">
+        All feilds are required
+      </div>
+      <div class="alert alert-primary d-none" id="reg-mailcorrect" role="alert">
+        Invalid email Address
+      </div>
       <form>
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">name</label>
@@ -81,7 +100,7 @@
           <input type="password" class="form-control" id="password">
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
           <input type="password" class="form-control" id="password-confirm">
         </div>
         

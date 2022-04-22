@@ -3,7 +3,11 @@
     "name": "Easy notes",
     "description": "Easy notes Launcher",
     "version": "1.0",
-    "icons": {"128": "images/icon1.png"},
+    "icons": {
+        "16": "images/icon1.png",
+        "48": "images/icon1.png",
+        "128": "images/icon1.png"
+    },
     "action": {
         "default_icon": "images/icon1.png",
         "default_popup": "index.html"
@@ -15,5 +19,5 @@
           "js": ["jquery.min.js","bootstrap.bundle.min.js"]
         }
     ],
-    "permissions": ["storage","scripting", "activeTab"]
+    "permissions": ["storage","scripting"]
 }
